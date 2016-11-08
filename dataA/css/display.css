@@ -1,0 +1,136 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.tttse {
+  display: block;
+}
+.wrapper {
+  height: 100%;
+}
+.wrapper .title {
+  background: #0E90D2;
+  height: 10%;
+  padding: 0.8%;
+}
+.wrapper .title p {
+  text-align: center;
+  font-size: 21px;
+  color: #fff;
+  margin: 0;
+}
+.wrapper #container {
+  height: 100%;
+}
+.wrapper .fw {
+  position: absolute;
+  top: 3%;
+  left: 0;
+  width: 20%;
+  background: transparent;
+  height: 100%;
+}
+.wrapper .fw .element {
+  position: relative;
+  margin: 10% auto;
+  width: 90%;
+  height: 40%;
+}
+.wrapper .popwindow {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  right: 35%;
+  background: #fff;
+  border-radius: 5px;
+  padding: 1% 1% 2%;
+}
+.wrapper .popwindow .data_type {
+  width: 100%;
+  height: 33%;
+  padding: 1%;
+}
+.wrapper .popwindow p {
+  font-size: 20px;
+  display: block;
+  height: 30px;
+  border-left: 2px solid #2CBB0F;
+  padding-left: 10px;
+  margin-bottom: 8%;
+}
+.wrapper .popwindow input {
+  width: 20px;
+  height: 20px;
+}
+.wrapper .popwindow label {
+  vertical-align: top;
+}
+.wrapper .popwindow .data_type {
+  width: 100%;
+  height: 33%;
+  padding: 1%;
+  margin-top: 12%;
+}
+.wrapper .popwindow .acc_type {
+  width: 100%;
+  height: 33%;
+  padding: 1%;
+}
+.wrapper .popwindow .sub-button {
+  width: 40%;
+  margin: 0 auto;
+  background: #0E90D2;
+  color: #fff;
+  text-align: center;
+  height: 12%;
+  line-height: 42px;
+  border-radius: 8px;
+  font-size: 18px;
+  margin-top: 8%;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+.wrapper .popwindow .sub-button:hover {
+  opacity: 0.6;
+}
+.wrapper .popwindow .sub-button:active {
+  background: #4EA639;
+}
+.wrapper .blur {
+  -webkit-filter: blur(10px);
+  /* Chrome, Opera */
+  -moz-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false);
+  /* IE6~IE9 */
+}
+.wrapper .mask {
+  -webkit-filter: blur(10px);
+  /* Chrome, Opera */
+  -moz-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false);
+  background-color: rgba(28, 28, 28, 0.85);
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wrapper .timefly {
+  display: none;
+  position: fixed;
+  left: 38%;
+  top: 30%;
+  border-radius: 10px;
+}
+.wrapper .timefly img {
+  border-radius: 25px;
+}

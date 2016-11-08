@@ -1,0 +1,39 @@
+html,body {
+  margin:0;
+  width: 1920px;
+  height: 1080px;
+  background-image:url("../images/background.jpg"); 
+  background-repeat:no-repeat;
+}
+
+#line-1 {
+  position: absolute;
+  top: 236px;
+  left:80px;
+  height: 350px;
+  width: 535px;
+}
+
+#map-1 {
+    position: absolute;
+    top: 696px;
+    left:1002px;
+    height: 316px;
+    width: 757px;
+}
+#map-2 {
+    position: absolute;
+    top: 713px;
+    left: 200px;
+    height: 274px;
+    width: 667px;
+}
+
+#force-graph {
+    position: absolute;
+    top: 231px;
+    left: 1244px;
+    height: 385px;
+    width: 625px;
+}
+

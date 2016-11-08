@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<title>食品溯源</title>
+	<link rel="shortcut icon" href="assets/images/favicon.ico"></link>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+	<script src="lib/echarts.js"></script>
+	<script src="lib/function.js"></script>
+	<script src="lib/dark.js"></script>
+	<!--
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
+	<script src="lib/dataTables.bootstrap.js"></script>
+	<script src="lib/jquery.dataTables.js"></script>
+	<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+	-->
+	
+	<script type="text/javascript" src="lib/bmap.js"></script>
+	<script type="text/javascript" scr="BMapCoordSys.js"></script>
+	<script type="text/javascript" src="lib/jquery.js"></script>
+	<script type="text/javascript" src="lib/dataTool.js"></script>
+	<script type="text/javascript" src="map/china.js"></script>
+	<script type="text/javascript" src="map/world.js"></script>
+</head>
+
+<body>
+	<div id="line-1"></div>
+	<div id="map-2"></div>
+	<div id="map-1"></div>
+	<div id="force-graph"></div>
+	
+	<script>
+	force_graph();
+	map_1();
+	map_2();
+	update_table();
+	line_1();
+	</script>
+	
+	<!-- DATA TABLE SCRIPTS 
+    <script src="lib/jquery.dataTables.js"></script>
+    -->
+    <script src="lib/jquery.dataTables.min.js"></script>
+    <script src="lib/dataTables.jqueryui.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#dataTables-example').dataTable();
+			setTimeout(function(){
+				
+				if($(".BMap_mask").length == 0){
+					$("#map-1").css("background-image", "url('assets/images/hotmap.jpg')");//这个old.png就直接替换成正常运行的图片就好
+				}
+			
+			}, 1000);
+        });
+    </script>
+</body>
+
+
