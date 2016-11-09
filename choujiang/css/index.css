@@ -2,10 +2,73 @@
 	padding: 0;
 	margin: 0;
 }
-html{
+
+
+html {
 	width: 100%;
 	height: 100%;
-	background: url(../image/bg2.jpg) no-repeat center center fixed;background-size: 100% 100%;
+	background: url(../image/bg2.jpg) no-repeat center center fixed;
+	background-size: 100% 100%;
+}
+
+.choujiang {
+	position: absolute;
+	height: 16%;
+	left: 38%;
+	right: 38%;
+	top: 20%;
+	color: red;
+	font-size: 115px;
+	text-align: center;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.begin {
+	font-size: 23px;
+	margin-top: 23px;
+	display: block;
+	width: 170px;
+}
+.button {
+	display: inline-block;
+	zoom: 1;
+	margin: 0 2px;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+	border-radius: .5em;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+.button:hover {
+	text-decoration: none;
+}
+
+.button:active {
+	position: relative;
+	top: 1px;
+}
+
+.bigrounded {
+	border-radius: 2em;
+}
+
+.blue {
+	color: #d9eef7;
+	border: solid 1px #0076a3;
+	background: #0095cd;
+}
+
+.blue:hover {
+	background: #007ead;
+}
+
+.blue:active {
+	color: #80bed6;
 }
 
 .wrap {
@@ -14,24 +77,21 @@ html{
 }
 
 .show {
-    position: absolute;
-    /* width: 40%; */
-    height: 51%;
-    left: 38%;
-    right: 38%;
-    top: 50%;
-    /* margin-left: -25%; */
-    margin-top: -15%;
-    background: pink;
-    padding-top: 1%;
-    
-    
+	position: absolute;
+	display: none;
+	height: 51%;
+	left: 38%;
+	right: 38%;
+	top: 50%;
+	margin-top: -15%;
+	padding-top: 1%;
 }
-#imgDiv{
-	    width: 100%;
-    height: 90%;
-    background: blue;
-    margin-top: 5%;
+
+#imgDiv {
+	width: 100%;
+	height: 90%;
+	background: blue;
+	margin-top: 5%;
 }
 
 .btn a {
@@ -72,15 +132,15 @@ img {
 	border: 0
 }
 
-em {
-	position: relative;
-    left: 23px;
-    font-size: 34px;
+.em {
+    position: relative;
+    font-size: 23px;
     font-family: '黑体';
-    text-align: center;
-    margin-left: 12%;
+    margin-left: 3%;
+    color: deeppink;
 }
 
 .up {
-	font-size: 30px;
+	font-size: 28px;
+	color: red;
 }
