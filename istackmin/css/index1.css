@@ -26,7 +26,7 @@ select {
 	border-radius: 20px;
 	z-index:4;
 }
-.show-pic span {
+/*.show-pic span {
 	margin-top: 16%;
     font-size: 11px;
     font-weight: bold;
@@ -35,7 +35,7 @@ select {
     width: 56%;
     margin-left: -27%;
     cursor: pointer;
-}
+}*/
 
 
 .desktop-two-top {
@@ -92,6 +92,10 @@ select {
 
 .desktop-two-center-five .map-img {
 	background-image: url(../img/shanghai.png);
+}
+.desktop-two-center-six .map-img {
+	/*background-image: url(../img/jl-bg.jpg);*/
+	/*background-size: cover;*/
 }
 
 .desktop-two-center .news {
@@ -229,6 +233,35 @@ select {
 	background: rgb(58, 157, 193);
 	cursor: pointer;
 }
+.city_table{
+    width: 57%;
+    height: 65px;
+    background: paleturquoise;
+    z-index: 999;
+    position: absolute;
+    border: 1px solid rosybrown;
+    box-shadow: 0 0 3px red;
+    padding: 4px;
+    display: none;
+}
+.city_table .button{
+	margin-top: 10px;
+}
+.city_table span{
+	margin-bottom:7px;
+	display: block;
+}
+.add{
+	float: right;
+    height: 70%;
+    margin-top: 7%;
+    line-height: 3px;
+    border-style: none;
+    cursor: pointer;
+    margin-right: 10%;
+    font-size: 21px;
+}
+
 
 .desktop-two-header {
 	height: 120px;

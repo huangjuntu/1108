@@ -678,7 +678,7 @@
 									<a href="#icon_dock_biancheng" class="window_close" id="window_close"></a>
 								</span>
 							</div>
-							<iframe width="99.5%" height="94%" orderr="7" class="if0" id="IframeID0" src=""></iframe>
+							<iframe width="99.5%" height="94%" orderr="0" class="if0" id="IframeID0" src=""></iframe>
 							<div class="abs window_bottom">
 								编程
 							</div>
@@ -1400,8 +1400,16 @@
 						<option value="3">重庆两江</option>
 						<option value="4">银川</option>
 						<option value="5">仪电总部大楼</option>
+						<option value="6" class="select6">- - - - - - 增加 - - - - - - </option>
 					</select>
+					
 					<button class="desktop-two-button">数据汇总</button>
+					<div class="add">⊕</div>
+					<div class="city_table">
+						<span>请输入城市名称：</span>
+						<input type="text" class="input1" id="cityName"/>
+						<input type="button" value="查询" onclick="theLocation()" class="button"/>
+					</div>
 				</div>
 				<!--select右侧点击桃浦出现的区域-->
 				<div class="desktop-two-center-one desktop-two-center " style="display: block;">
@@ -1409,9 +1417,6 @@
 						<div class="dropzone"></div>
 					</div>
 					<div class="news" style="display: block;">
-						<!--<p>桃浦，上海构建开放型经济新体制的重要门户，区位优势独具.</p><br>
-					<p>坚持以人为本、智慧引领，并依托政策优势及“科技智慧”定位，将桃浦科技智慧城打造成集科技、智慧、生态于一体的新一代智慧之城。</p>-->
-						<!--controls="controls"-->
 						<video src="img/welcome/welcome_video.mp4" autoplay="autoplay" loop="loop" width="100%" height="100%"></video>
 					</div>
 
@@ -1420,11 +1425,6 @@
 						<span>数据整合中。。。</span>
 					</div>
 					<div class="show-pic">
-
-						<!--<span class="abs icon ui-draggable ui-draggable-handle tpkj"  onclick="window.open('http://10.200.43.37:1337');">
-							<img src="img/logo-icon.jpg" style="width: 50%; cursor: pointer;">
-							桃浦科技智慧城管理系统
-						</span>-->
 						<a class="abs icon ui-draggable ui-draggable-handle tpkj1" href="#icon_dock_tpkj" id="leap24">
 							<img src="img/logo-icon.jpg" style="width: 50%; cursor: pointer;">
 							<span style="display: block;">桃浦科技智慧城管理系统</span>
@@ -1435,9 +1435,6 @@
 				<div class="desktop-two-center-two desktop-two-center" style="display: none;">
 					<div class="map-img"></div>
 					<div class="news" style="display: block;">
-						<!--<p>金领之都 隶属于上海择励实业有限公司 ，同时上海华鑫股份有限公司是上海择励实业有限公司 的全资投资商。</p><br>
-					<p> 上海择励实业有限公司以房地产开发为主营业务，金领之都是上海华鑫股份有限公司现阶段的重点开发项目， 公司着力于打造金桥标志性商务办公园区，项目规划30万㎡建筑面积，分三区开发，目前已完成约20万㎡建筑.
-					</p>-->
 						<video src="img/welcome/welcome_video.mp4" autoplay="autoplay" loop="loop" width="100%" height="100%"></video>
 					</div>
 					<div class="shalou">
@@ -1449,9 +1446,6 @@
 					<div class="map-img cqlj" href="#icon_dock_cqlj" style="cursor: pointer;">
 					</div>
 					<div class="news" style="display: block;">
-						<!--<p>上海，简称“沪”或“申”，中华人民共和国直辖市.</p><br>
-					<p>国家中心城市，超大城市，中国的经济、金融、贸易、航运中心，首批沿海开放城市。</p><br>
-					<p>地处长江入海口，隔东中国海与日本九州岛相望，南濒杭州湾，北、西与江苏、浙江两省相接。</p>-->
 						<video src="img/welcome/welcome_video.mp4" autoplay="autoplay" loop="loop" width="100%" height="100%"></video>
 					</div>
 					<div class="shalou">
@@ -1463,8 +1457,6 @@
 					<div class="map-img">
 					</div>
 					<div class="news" style="display: block;">
-						<!--<p>深圳，别称鹏城，广东省辖市，地处广东省南部，珠江三角洲东岸，与香港一水之隔，东临大亚湾和大鹏湾，西濒珠江口和伶仃洋， 南隔深圳河与香港相连，北部与东莞、惠州接壤。 </p><br>
-					<p>深圳是中国改革开放建立的第一个经济特区，是中国改革开放的窗口，已发展为有一定影响力的国际化城市</p><br>-->
 						<video src="img/welcome/welcome_video.mp4" autoplay="autoplay" loop="loop" width="100%" height="100%"></video>
 					</div>
 					<div class="shalou">
@@ -1476,8 +1468,16 @@
 					<div class="map-img">
 					</div>
 					<div class="news" style="display: block;">
-						<!--<p>深圳，别称鹏城，广东省辖市，地处广东省南部，珠江三角洲东岸，与香港一水之隔，东临大亚湾和大鹏湾，西濒珠江口和伶仃洋， 南隔深圳河与香港相连，北部与东莞、惠州接壤。 </p><br>
-					<p>深圳是中国改革开放建立的第一个经济特区，是中国改革开放的窗口，已发展为有一定影响力的国际化城市</p><br>-->
+						<video src="img/welcome/welcome_video.mp4" autoplay="autoplay" loop="loop" width="100%" height="100%"></video>
+					</div>
+					<div class="shalou">
+						<span>数据整合中。。。。</span>
+					</div>
+				</div>
+				
+				<div class="desktop-two-center-six desktop-two-center" style="display: none;">
+					<div class="map-img" id="allmap" >点击右上角按钮添加</div>
+					<div class="news" style="display: block;">
 						<video src="img/welcome/welcome_video.mp4" autoplay="autoplay" loop="loop" width="100%" height="100%"></video>
 					</div>
 					<div class="shalou">
@@ -1834,7 +1834,11 @@
 
 		<!--拖拽开始-->
 		<script type="text/javascript" src="js/drag-jquery.dad.min.js"></script>
-
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=2.0&ak=yaDRGoon5YoRzAAwH781yUgn"></script>
+		
+		
+		
 	</body>
 
 </html>
