@@ -2,6 +2,10 @@ $(function() {
 	$(".button").click(function() {
 		$(".choujiang").hide();
 		$(".show").show();
+		$(".buttom").show();
+		$(".error").hide();
+		$(".win").hide();
+		
 		//抽奖js--begin
 //		var alldata = new Array("image/2.jpg","image/4.jpg", "image/7.jpg","image/60.jpg");
 //		var prizeArray = new Array("image/2.jpg", "image/7.jpg");
@@ -78,13 +82,20 @@ $(function() {
 					$("#myaudio")[0].play();
 					prizeArray.remove(name);
 					console.log(prizeArray.length);
-					$("span.up").html("恭喜您，余:"+prizeArray.length);
+					$("span.up").html("恭喜您");
+					$(".win").show();
+					$(".error").hide();
+					
+					$(".buttom").html(prizeArray.length);
 					$("span.up").css("color","red");
 					console.log("win");
 
 				} else {
 					$("#myaudio")[0].pause();
-					$("span.up").html("遗憾，未中奖");
+					$("span.up").html("遗憾");
+					$(".error").show();
+					$(".win").hide();
+					$(".buttom").html(prizeArray.length);
 					$("span.up").css("color","black");
 					console.log("fail");
 				}
@@ -96,6 +107,8 @@ $(function() {
 			}
 		}
 		$(document).keyup(function(e) {
+			$(".error").hide();
+			$(".win").hide();
 			$("span.up").html("");
 			if(!e) var e = window.event;
 			if(e.keyCode == 32) {

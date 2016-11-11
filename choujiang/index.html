@@ -2,23 +2,36 @@
 <html>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>jquery随机图片抽奖</title>
+
 	<head>
-	<link rel="stylesheet" href="css/index.css" />
-	<script id="jquery_172" type="text/javascript" class="library" src="js/jquery.js"></script>
-	<script type="text/javascript"  src="js/index.js"></script>
+		<link rel="stylesheet" href="css/index.css" />
+		<script id="jquery_172" type="text/javascript" class="library" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
 	</head>
+
 	<body>
-	<div class="top">
-		<div class="choujiang">抽奖
-			<span class="begin button blue bigrounded">开始抽奖</span>
-		</div>
-		<div class="show" id="show" >
-			<div class="em">请点击空格键--(<span class="up">余：12</span>)</div>
-			<div id="imgDiv">
-					<img src="image/1.jpg" id="image" height="100%" width="100%">
+		<div class="top">
+
+			<div class="choujiang">抽奖
+				<span class="begin button blue bigrounded">开始抽奖</span>
 			</div>
-		<audio id="myaudio" src="" controls="controls" hidden="true">
+			<div class="show" id="show">
+				<div class="em">请点击空格键--(<span class="up">开始</span>)</div>
+				<div id="imgDiv">
+					<img src="image/1.jpg" id="image" height="100%" width="100%">
+				</div>
+				<div class="error">
+					<img src="image/error.jpg" width="100%" height="100%">
+				</div>
+				<div class="win">
+					<img src="image/win.gif" width="100%" height="100%">
+				</div>
+
+				<audio id="myaudio" src="" controls="controls" hidden="true">
+
+			</div>
+			<div class="buttom">12</div>
 		</div>
-	</div>
 	</body>
+
 </html>
