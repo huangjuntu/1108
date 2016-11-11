@@ -56,9 +56,15 @@ body {
 #main {
     position: relative;
     /*background: url(../img/new/biglogo.jpg)  no-repeat,url(../img/bj1.png) no-repeat;*/
-   background: url(../img/new/biglogo2.1.jpg) 49% 0 no-repeat; 
+   background: url(../img/new/biglogo2.3.jpg) 49% 0 no-repeat; 
    background-size: 100% 100%;
 }
+/*.logo{
+	width: 100px;
+	height: 200px;
+	position: absolute;
+	z-index: 999;
+}*/
 
 /*.wrap {
 }*/
@@ -90,6 +96,7 @@ body {
     margin-right: -225px;
     top: 45%;
     margin-top: -25px;
+    z-index: 999;
 }
 
 .smartcollege h3 {
