@@ -26,25 +26,28 @@ $(function () {
 		//  prizeArray ：储存中奖图片(包含一等奖，二等奖，三等奖)
 
 		// 所有一等奖图片相同，所有二等奖图片相同，所有三等奖图片相同
-		var prizeArray = new Array();
-		for(var p1 = 1; p1 <=FirstPrice; p1++){
-			prizeArray.push("image/58.jpg");
-		}
-		for(var p2 = 1; p2<=SecondPrice;p2++){
-			prizeArray.push("image/37.jpg");
-		}
-		for(var p3 = 1; p3<=ThirdPrize;p3++){
-			prizeArray.push("image/7.jpg");
-		}
+		// var prizeArray = new Array();
+		// for(var p1 = 1; p1 <=FirstPrice; p1++){
+		// 	prizeArray.push("image/58.jpg");
+		// }
+		// for(var p2 = 1; p2<=SecondPrice;p2++){
+		// 	prizeArray.push("image/37.jpg");
+		// }
+		// for(var p3 = 1; p3<=ThirdPrize;p3++){
+		// 	prizeArray.push("image/7.jpg");
+		// }
 
 		// 每种奖项相片不同的情况
-		// var prizeArray = new Array(
-		// 	"image/2.jpg", "image/7.jpg", "image/16.jpg",
-		// 	"image/31.jpg", "image/33.jpg", "image/35.jpg",
-		// 	"image/37.jpg", "image/44.jpg", "image/49.jpg",
-		// 	"image/54.jpg", "image/58.jpg", "image/60.jpg"
-		// );
+		var prizeArray = new Array(
+			"image/2.jpg", "image/7.jpg", "image/16.jpg",
+			"image/31.jpg", "image/33.jpg", "image/35.jpg",
+			"image/37.jpg", "image/44.jpg", "image/49.jpg",
+			"image/54.jpg", "image/58.jpg", "image/60.jpg"
+		);
 
+		$(".buttom").show();
+		$(".error").hide();
+		$(".win").hide();
 		var num = alldata.length - 1;
 		var show = $("#image");
 		//		var btn = $("#btn");
@@ -89,14 +92,21 @@ $(function () {
 					$("#myaudio")[0].play();
 					prizeArray.remove(name);
 					console.log(prizeArray.length);
-					$("span.up").html("恭喜您，余:" + prizeArray.length);
-					$("span.up").css("color", "red");
+					$("span.up").html("恭喜您");
+					$(".win").show();
+					$(".error").hide();
+					
+					$(".buttom").html(prizeArray.length);
+					$("span.up").css("color","red");
 					console.log("win");
 
 				} else {
 					$("#myaudio")[0].pause();
-					$("span.up").html("遗憾，未中奖");
-					$("span.up").css("color", "black");
+					$("span.up").html("遗憾");
+					$(".error").show();
+					$(".win").hide();
+					$(".buttom").html(prizeArray.length);
+					$("span.up").css("color","black");
 					console.log("fail");
 				}
 				if (prizeArray.length == 0) {
@@ -106,7 +116,10 @@ $(function () {
 				open = false;
 			}
 		}
-		$(document).keyup(function (e) {
+
+		$(document).keyup(function(e) {
+			$(".error").hide();
+			$(".win").hide();
 			$("span.up").html("");
 			if (!e) var e = window.event;
 			if (e.keyCode == 32) {

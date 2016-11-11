@@ -1,0 +1,273 @@
+body {
+	/*background: url("../img/77.jpg") 0 0 repeat;*/
+	background: url(../img/bg.jpg) no-repeat center center fixed;
+	background-size: 100% 100%;
+}
+
+.LoginWindow {
+    height: 330px;
+    width: 400px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-top: -125px;
+    margin-left: -205px;
+    /* animation: LoginWindow 2s linear; */
+}
+
+a {
+	color: #00a1d2;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.registration {
+	padding-left: 100px;
+	font-size: 13px;
+	font-weight: 100;
+	letter-spacing: 1px;
+}
+
+.login {
+	position: relative;
+	width: 400px;
+	font-weight: 300;
+	color: #fff;
+	text-align: center;
+}
+
+.login p {
+	margin: 0 0 30px;
+}
+
+.login .title {
+	font-size: 45px;
+	margin-bottom: 50px;
+	font-family: arial;
+}
+
+input,
+button {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	box-sizing: border-box;
+}
+
+input[type=text],
+input[type=password] {
+	padding: 0 10px;
+	width: 300px;
+	height: 40px;
+	color: #fff;
+	/*text-shadow: 1px 1px 1px black;*/
+	background: rgba(0, 0, 0, 0.16);
+	border: 0;
+	border-radius: 5px;
+	/*box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);*/
+}
+
+button:hover {
+    -moz-box-shadow:
+        0 15px 30px 0 rgba(255,255,255,.15) inset,
+        0 2px 7px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow:
+        0 15px 30px 0 rgba(255,255,255,.15) inset,
+        0 2px 7px 0 rgba(0,0,0,.2);
+    box-shadow:
+        0 15px 30px 0 rgba(255,255,255,.15) inset,
+        0 2px 7px 0 rgba(0,0,0,.2);
+}
+
+button:active {
+    -moz-box-shadow:
+        0 15px 30px 0 rgba(255,255,255,.15) inset,
+        0 2px 7px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow:
+        0 15px 30px 0 rgba(255,255,255,.15) inset,
+        0 2px 7px 0 rgba(0,0,0,.2);
+    box-shadow:        
+        0 5px 8px 0 rgba(0,0,0,.1) inset,
+        0 1px 4px 0 rgba(0,0,0,.1);
+
+    border: 0px solid #ef4300;
+}
+
+
+input[type=text]:focus,
+input[type=password]:focus {
+	color: #fff;
+	/* background: rgba(0, 0, 0, 0.1);*/
+	outline: 0;
+}
+
+:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: #fff;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: #fff;
+	opacity: 1;
+}
+
+input:-ms-input-placeholder {
+	color: #fff;
+	opacity: 1;
+}
+
+input::-webkit-input-placeholder {
+	color: #fff;
+	opacity: 1;
+}
+
+.btn-submit {
+	padding: 0 10px;
+	width: 300px;
+	height: 40px;
+	background: -webkit-linear-gradient(#5B8BBB, #395D8D);
+	background: -moz-linear-gradient(#5B8BBB, #395D8D);
+	background: -o-linear-gradient(#5B8BBB, #395D8D);
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#5B8BBB), to(#395D8D));
+	background: linear-gradient(#5B8BBB, #395D8D);
+	color: #fff;
+	font-size: 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+
+.login-submit {
+	position: absolute;
+	top: 12px;
+	right: 57px;
+	width: 48px;
+	height: 48px;
+	padding: 8px;
+	border-radius: 32px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+}
+
+
+
+
+
+
+.login-submit:before,
+.login-submit:after {
+	content: '';
+	z-index: 1;
+	position: absolute;
+}
+
+.login-submit:before {
+	top: 28px;
+	left: -4px;
+	width: 4px;
+	height: 10px;
+	/*box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);*/
+}
+
+.login-submit:after {
+	top: -4px;
+	bottom: -4px;
+	right: -4px;
+	width: 36px;
+}
+
+.login-button {
+	position: relative;
+	z-index: 2;
+	width: 48px;
+	height: 48px;
+	padding: 0 0 48px;
+	text-indent: 120%;
+	white-space: nowrap;
+	overflow: hidden;
+	background: none;
+	border: 0;
+	border-radius: 24px;
+	cursor: pointer;
+	/*box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);*/
+	transition-duration: 0.8s;
+	transform: rotate(180deg);
+	animation: login_button 3s;
+}
+
+.login-button:hover {
+	transform: rotate(360deg);
+}
+
+.login-button:before {
+	content: '';
+	position: absolute;
+	top: 5px;
+	bottom: 5px;
+	left: 5px;
+	right: 5px;
+	background: #00a2d3;
+	border-radius: 24px;
+	/*box-shadow: inset 0 0 0 1px #00a2d3, 0 0 0 5px rgba(0, 0, 0, 0.16);*/
+}
+
+.login-button:active:before {
+	background: #0591ba;
+}
+
+.login-button:after {
+	content: '';
+	position: absolute;
+	top: 15px;
+	left: 12px;
+	width: 25px;
+	height: 19px;
+	background: url("../img/arrow.png") 0 0 no-repeat;
+}
+
+::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+.lt-ie9 input[type=text],
+.lt-ie9 input[type=password] {
+	line-height: 40px;
+	background: #282828;
+}
+
+.lt-ie9 .login-submit {
+	position: absolute;
+	top: 12px;
+	right: -28px;
+	padding: 4px;
+}
+
+.lt-ie9 .login-submit:before,
+.lt-ie9 .login-submit:after {
+	display: none;
+}
+
+.lt-ie9 .login-button {
+	line-height: 48px;
+}
+
+
+/*h2{
+	  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		color: #a8a7a8;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
+	}*/
+
+#timeArea {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+}
